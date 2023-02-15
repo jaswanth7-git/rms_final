@@ -6,15 +6,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UserService {
   constructor(private httpClient:HttpClient) { }
-  getMovies(){
-    return this.httpClient.get("http://localhost:8888/Movies_API/movies");
-  }
-  getMovie(id:any){
-    return this.httpClient.get(`http://localhost:8888/Movies_API/movies/${id}`);
-  }
-  createReview(data:any)
+  createUser(data:any)
   {
-    let headers={"Content-Type":"application/json"};
-    return this.httpClient.post("http://localhost:8888/Movies_API/reviews/",data,{headers});
+    let headers={"Content-Type":"application/json","Access-Control-Allow-Origin":'*'};
+    return this.httpClient.post("http://127.0.0.1:8000/api/users/",data,{headers});
   }
 }
