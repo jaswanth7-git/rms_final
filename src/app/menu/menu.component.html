@@ -46,64 +46,15 @@
 
                 <div class="row gy-5">
 
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/breakfast-item-1.png" class="glightbox"><img
-                                src="assets/img/menu/breakfast-item-1.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Cheese Arepas</h4>
+                    <div class="col-lg-4 menu-item" *ngFor="let breakfast of breakfastItems">
+                        <a href="{{breakfast.image}}" class="glightbox"><img src="{{breakfast.image}}"
+                                class="menu-img img-fluid" alt=""></a>
+                        <h4>{{breakfast.name}}</h4>
                         <p class="price">
-                            ₹1280
+                            ₹{{breakfast.price}}
                         </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/breakfast-item-2.png" class="glightbox"><img
-                                src="assets/img/menu/breakfast-item-2.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Waffles</h4>
-
-                        <p class="price">
-                            ₹1360
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/breakfast-item-3.png" class="glightbox"><img
-                                src="assets/img/menu/breakfast-item-3.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>French Toast</h4>
-
-                        <p class="price">
-                            ₹1200
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/breakfast-item-4.png" class="glightbox"><img
-                                src="assets/img/menu/breakfast-item-4.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Tomato Pasta</h4>
-
-                        <p class="price">
-                            ₹1295
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/breakfast-item-5.png" class="glightbox"><img
-                                src="assets/img/menu/breakfast-item-5.png" class="menu-img img-fluid mt-5" alt=""></a>
-                        <h4>Sandwiches</h4>
-
-                        <p class="price">
-                            ₹1425
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/breakfast-item-6.png" class="glightbox"><img
-                                src="assets/img/menu/breakfast-item-6.png" class="menu-img mt-3 img-fluid" alt=""></a>
-                        <h4>Strawberry Cereal</h4>
-
-                        <p class="price">
-                            ₹995
-                        </p>
-                    </div><!-- Menu Item -->
+                    </div>
+                    <!-- Menu Item -->
 
                 </div>
             </div><!-- End Breakfast Menu Content -->
@@ -117,65 +68,14 @@
 
                 <div class="row gy-5">
 
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img
-                                src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Gobi Manchurian</h4>
-
+                    <div class="col-lg-4 menu-item" *ngFor="let starter of starterItems">
+                        <a href="{{starter.image}}" class="glightbox"><img src="{{starter.image}}"
+                                class="menu-img img-fluid" alt=""></a>
+                        <h4>{{starter.name}}</h4>
                         <p class="price">
-                            ₹495
+                            ₹{{starter.price}}
                         </p>
                     </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img
-                                src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Chilli Panner</h4>
-
-                        <p class="price">
-                            ₹750
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img
-                                src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Vegetable Soup</h4>
-
-                        <p class="price">
-                            ₹625
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img
-                                src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Greek Salad</h4>
-
-                        <p class="price">
-                            ₹580
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img
-                                src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                        <h4 class="mt-3">Button Mushrooms</h4>
-
-                        <p class="price">
-                            ₹790
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img
-                                src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Vegetable Salad</h4>
-                        <p class="price">
-                            ₹680
-                        </p>
-                    </div><!-- Menu Item -->
-
                 </div>
             </div><!-- End Starter Menu Content -->
 
@@ -189,63 +89,13 @@
 
                 <div class="row gy-5">
 
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/lunch-item-1.png" class="glightbox"><img
-                                src="assets/img/menu/lunch-item-1.png" class="menu-img img-fluid" alt=""></a>
+                    <div class="col-lg-4 menu-item" *ngFor="let lunch of lunchItems">
+                        <a href="{{lunch.image}}" class="glightbox"><img src="{{lunch.image}}"
+                                class="menu-img img-fluid" alt=""></a>
                         <h4>Dum Subz Biryani</h4>
 
                         <p class="price">
-                            ₹2270
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/lunch-item-2.png" class="glightbox"><img
-                                src="assets/img/menu/lunch-item-2.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Indo Chinese Noodles</h4>
-
-                        <p class="price">
-                            ₹1895
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/lunch-item-3.png" class="glightbox"><img
-                                src="assets/img/menu/lunch-item-3.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Fried Rice</h4>
-
-                        <p class="price">
-                            ₹2100
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/lunch-item-4.png" class="glightbox"><img
-                                src="assets/img/menu/lunch-item-4.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Panner Pizza</h4>
-
-                        <p class="price">
-                            ₹2695
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/lunch-item-5.png" class="glightbox"><img
-                                src="assets/img/menu/lunch-item-5.png" class="menu-img mt-3 img-fluid" alt=""></a>
-                        <h4>Great Indian Thali</h4>
-
-                        <p class="price">
-                            ₹3200
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/lunch-item-6.png" class="glightbox"><img
-                                src="assets/img/menu/lunch-item-6.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Panner Butter Masala & Roti</h4>
-
-                        <p class="price">
-                            ₹1985
+                            ₹{{lunch.price}}
                         </p>
                     </div><!-- Menu Item -->
 
@@ -261,66 +111,15 @@
 
                 <div class="row gy-5">
 
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/drink-item-1.png" class="glightbox"><img
-                                src="assets/img/menu/drink-item-1.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Yellow Bird Cocktail</h4>
+                    <div class="col-lg-4 menu-item" *ngFor="let drink of drinkItems">
+                        <a href="{{drink.image}}" class="glightbox"><img src="{{drink.image}}"
+                                class="menu-img img-fluid" alt=""></a>
+                        <h4>{{drink.name}}</h4>
 
                         <p class="price">
-                            ₹785
+                            ₹{{drink.price}}
                         </p>
                     </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/drink-item-2.png" class="glightbox"><img
-                                src="assets/img/menu/drink-item-2.png" class="menu-img mt-5 img-fluid" alt=""></a>
-                        <h4>Blue Lagoon Cocktail</h4>
-
-                        <p class="price">
-                            ₹1235
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/drink-item-3.png" class="glightbox"><img
-                                src="assets/img/menu/drink-item-3.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Mojito</h4>
-
-                        <p class="price">
-                            ₹945
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/drink-item-4.png" class="glightbox"><img
-                                src="assets/img/menu/drink-item-4.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Coke</h4>
-
-                        <p class="price">
-                            ₹850
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/drink-item-5.png" class="glightbox"><img
-                                src="assets/img/menu/drink-item-5.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Orange Juice</h4>
-
-                        <p class="price">
-                            ₹745
-                        </p>
-                    </div><!-- Menu Item -->
-
-                    <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/drink-item-6.png" class="glightbox"><img
-                                src="assets/img/menu/drink-item-6.png" class="menu-img img-fluid" alt=""></a>
-                        <h4>Dry Martini</h4>
-
-                        <p class="price">
-                            ₹1075
-                        </p>
-                    </div><!-- Menu Item -->
-
                 </div>
             </div><!-- End Dinner Menu Content -->
 
